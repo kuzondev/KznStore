@@ -1,0 +1,19 @@
+{
+  "SchemaVersion": 1,
+  "Products": [
+    {
+      "Id": "kzn-notch",
+      "Name": "Kzn Notch",
+      "Version": "0.10.7.0",
+      "PackageName": "Notchify.Desktop",
+      "Publisher": "CN=Notchify Development",
+      "GitHubRepository": "kuzondev/KznNotch",
+      "DownloadUrl": "",
+      "Sha256": "",
+      "Description": {
+        "de": "Musik, Fokus, Aufgaben und eigene .kzn-Erweiterungen – direkt am Bildschirmrand.",
+        "en": "Music, focus, tasks and your own .kzn extensions, right at the edge of your screen."
+      }
+    }
+  ]
+}

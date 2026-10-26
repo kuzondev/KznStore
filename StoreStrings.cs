@@ -1,0 +1,60 @@
+namespace KznStore.Store;
+
+public sealed class StoreStrings
+{
+    public string Language { get; set; } = CultureInfo.CurrentUICulture.TwoLetterISOLanguageName == "de" ? "de" : "en";
+    private static readonly Dictionary<string, (string De, string En)> Text = new()
+    {
+        ["GitHub"] = ("GitHub", "GitHub"), ["DemoBadge"] = ("NUR LOKAL · DEMO", "LOCAL ONLY · DEMO"),
+        ["DemoStars"] = ("Demo-Sterne", "Demo stars"), ["DemoOnly"] = ("Lokale Vorschau: Sterne sind zufällig. Die Installation ist simuliert und lädt keine Dateien herunter.", "Local preview: stars are random. Installation is simulated and downloads no files."),
+        ["DemoInstalling"] = ("Installiert…", "Installing…"), ["DemoOpen"] = ("Testen", "Try demo"),
+        ["DemoComplete"] = ("KZN Test wurde simuliert installiert. Es wurden keine Programme oder Dateien installiert.", "KZN Test finished its simulated installation. No apps or files were installed."),
+        ["DemoReset"] = ("Zurücksetzen", "Reset demo"), ["HideDemo"] = ("Testitem ausblenden", "Hide test item"),
+        ["DemoSource"] = ("Quellcode dieser Demo im Kzn-Store-Repository ansehen", "View this demo's source in the Kzn Store repository"),
+        ["Today"] = ("Heute", "Today"), ["Apps"] = ("Apps", "Apps"),
+        ["Featured"] = ("IM FOKUS", "FEATURED"), ["HeroTitle"] = ("Kleine Notch.\nGroße Möglichkeiten.", "Small notch.\nBig possibilities."),
+        ["HeroSubtitle"] = ("Musik, Fokus und dein Alltag. Immer griffbereit.", "Music, focus and your day. Always within reach."),
+        ["ViewApp"] = ("App entdecken", "Explore app"), ["ForYou"] = ("Für deinen Alltag", "For your everyday"),
+        ["CheckUpdates"] = ("Katalog aktualisieren", "Refresh catalog"), ["Checking"] = ("Katalog wird geladen…", "Refreshing catalog…"),
+        ["Stars"] = ("GitHub-Sterne", "GitHub stars"), ["Community"] = ("Community", "Community"),
+        ["LoadingStars"] = ("Wird geladen…", "Loading…"), ["OfflineStars"] = ("Nicht verfügbar", "Unavailable"),
+        ["StarsHint"] = ("Sterne des GitHub-Repositories, keine App-Bewertung.", "Stars on the GitHub repository, not an app rating."),
+        ["AboutApp"] = ("Über diese App", "About this app"), ["Version"] = ("Version", "Version"),
+        ["Platform"] = ("Plattform", "Platform"), ["Back"] = ("Zurück", "Back"), ["Source"] = ("Auf GitHub ansehen", "View on GitHub"),
+        ["Preview"] = ("VORSCHAU", "PREVIEW"), ["AllApps"] = ("Alle Apps", "All apps"),
+        ["Discover"] = ("Entdecken", "Discover"), ["Library"] = ("Mediathek", "Library"),
+        ["Title"] = ("Deine Kzn-Programme.", "Your Kzn apps."),
+        ["Subtitle"] = ("Ein Platz für alle deine Programme. Weitere Apps kommen mit neuen Katalogen hinzu.", "One place for all your apps. New catalogs bring more apps."),
+        ["Search"] = ("Programme suchen", "Search apps"), ["Import"] = ("Katalog hinzufügen", "Add catalog"),
+        ["Refresh"] = ("Aktualisieren", "Refresh"), ["Installed"] = ("Installiert", "Installed"),
+        ["Available"] = ("Verfügbar", "Available"), ["Open"] = ("Öffnen", "Open"),
+        ["Install"] = ("Installieren", "Install"), ["Update"] = ("Update laden", "Get update"),
+        ["Unavailable"] = ("Noch kein Download", "No download yet"), ["Cancel"] = ("Abbrechen", "Cancel"),
+        ["Empty"] = ("Keine passenden Programme gefunden.", "No matching apps found."),
+        ["Ready"] = ("Bereit · Katalog wird mit GitHub synchronisiert.", "Ready · catalog syncs with GitHub."),
+        ["CatalogUpdated"] = ("Katalog von GitHub aktualisiert.", "Catalog refreshed from GitHub."), ["CatalogOffline"] = ("GitHub-Katalog nicht erreichbar. Gespeicherte Apps werden weiter angezeigt.", "GitHub catalog is unavailable. Cached apps remain visible."),
+        ["Downloading"] = ("Installer wird heruntergeladen und geprüft…", "Downloading and verifying installer…"),
+        ["Installer"] = ("Geprüft. Bestätige die Installation im Windows-App-Installer und aktualisiere danach die Mediathek.", "Verified. Confirm installation in Windows App Installer, then refresh your library."),
+        ["Imported"] = ("Katalog geprüft und übernommen.", "Catalog validated and added."),
+        ["Error"] = ("Aktion fehlgeschlagen: ", "Action failed: "), ["Cancelled"] = ("Download abgebrochen.", "Download cancelled."),
+        ["Publisher"] = ("Herausgeber", "Publisher"),
+        ["Language"] = ("Sprache", "Language"), ["Catalog"] = ("Eigenen Katalog importieren", "Import a catalog"),
+        ["CatalogNote"] = ("Importiere nur Kataloge aus einer Quelle, der du vertraust. Sie legen Downloads und Herausgeber fest.", "Only import catalogs from a source you trust. They define downloads and publishers."),
+        ["Overview"] = ("Übersicht", "Overview"), ["Collections"] = ("Sammlungen", "Collections"),
+        ["UpdatesNav"] = ("Updates", "Updates"), ["SettingsNav"] = ("Einstellungen", "Settings"),
+        ["Welcome"] = ("Willkommen im Kzn Store", "Welcome to Kzn Store"),
+        ["WelcomeSubtitle"] = ("Entdecke Programme und Funktionen von Kzn – alles an einem Ort.", "Discover apps and features from Kzn — all in one place."),
+        ["TrendingApps"] = ("Im Store", "Trending apps"), ["FeaturedApps"] = ("Empfohlene Apps", "Featured apps"),
+        ["Categories"] = ("Was Kzn kann", "Explore Kzn Notch"), ["MusicFeature"] = ("Musik", "Music"),
+        ["FocusFeature"] = ("Fokus", "Focus"), ["TasksFeature"] = ("Aufgaben", "Tasks"),
+        ["GamingFeature"] = ("Gaming-Modus", "Gaming mode"), ["PluginsFeature"] = (".kzn-Erweiterungen", ".kzn extensions"),
+        ["AllInOne"] = ("Deine Programme. An einem Ort.", "Your apps. All in one place."),
+        ["SidebarSubtitle"] = ("Entdecke Kzn-Programme und verwalte deine Installationen.", "Discover Kzn apps and manage your installs."),
+        ["CollectionAll"] = ("Alle Programme", "All apps"), ["CollectionAllDetail"] = ("Alle Einträge aus deinem lokalen Katalog.", "Everything in your local catalog."),
+        ["CollectionInstalled"] = ("Installiert", "Installed apps"), ["CollectionInstalledDetail"] = ("Deine bereits installierten Programme.", "Apps already installed on this device."),
+        ["CollectionDemo"] = ("Lokale Vorschau", "Local preview"), ["CollectionDemoDetail"] = ("Das private KZN-Testitem ausprobieren.", "Try the private KZN test item."),
+        ["StoreSettings"] = ("Store-Einstellungen", "Store settings"), ["StoreSettingsDetail"] = ("Sprache, Katalog und Updates verwalten.", "Manage language, catalog and updates."),
+        ["UpdateDescription"] = ("Lade den neuesten Programmkatalog von GitHub und entdecke neue Apps.", "Fetch the latest app catalog from GitHub and discover new apps.")
+    };
+    public string this[string key] => Text.TryGetValue(key, out var item) ? Language == "de" ? item.De : item.En : key;
+}

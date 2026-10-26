@@ -1,0 +1,9 @@
+<Application x:Class="KznStore.App" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" ShutdownMode="OnMainWindowClose">
+  <Application.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries><ResourceDictionary Source="Views/StoreTheme.xaml"/></ResourceDictionary.MergedDictionaries>
+      <CornerRadius x:Key="ControlRadius">12</CornerRadius>
+      <Style x:Key="Muted" TargetType="TextBlock"><Setter Property="Foreground" Value="{DynamicResource MutedBrush}"/><Setter Property="FontSize" Value="12"/></Style>
+    </ResourceDictionary>
+  </Application.Resources>
+</Application>

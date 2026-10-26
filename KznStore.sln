@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KznStore", "KznStore.csproj", "{932F39BF-3D21-4CA8-A31C-10BE5F4E5A01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KznStore.Smoke", "tests\KznStore.Smoke\KznStore.Smoke.csproj", "{56A3831B-1FBA-4995-85BF-7ACFE6937D0D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{932F39BF-3D21-4CA8-A31C-10BE5F4E5A01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{932F39BF-3D21-4CA8-A31C-10BE5F4E5A01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{932F39BF-3D21-4CA8-A31C-10BE5F4E5A01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{932F39BF-3D21-4CA8-A31C-10BE5F4E5A01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56A3831B-1FBA-4995-85BF-7ACFE6937D0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56A3831B-1FBA-4995-85BF-7ACFE6937D0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56A3831B-1FBA-4995-85BF-7ACFE6937D0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56A3831B-1FBA-4995-85BF-7ACFE6937D0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
